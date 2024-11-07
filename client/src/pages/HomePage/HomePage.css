@@ -67,14 +67,25 @@
     rgba(255, 255, 255, 0) 100%
   );
   transform: skewX(-25deg);
-  animation: shine 1s infinite;
+  animation: shine 3s infinite;
 }
 
 .get-started-btn:hover {
-  background-color: #14cf2d;
+  background-color: #22b64c;
   transform: translateY(0);
   border-bottom-width: 4px;
 }
+
+.get-started-btn {
+  align-items: center;
+  justify-content: center;
+}
+
+.upload-icon {
+  font-size: 1.2rem;
+  margin-left: 7px;
+}
+
 
 @keyframes shine {
   0% {

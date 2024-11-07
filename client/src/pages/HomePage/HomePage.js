@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCloudArrowUp } from "@fortawesome/free-solid-svg-icons";
 import "./HomePage.css";
 
 const HomePage = () => {
@@ -18,7 +20,10 @@ const HomePage = () => {
           </p>
         </div>
 
-        <button className="get-started-btn">Upload Your Document</button>
+        <button className="get-started-btn">
+          Upload Your Dodcument
+          <FontAwesomeIcon icon={faCloudArrowUp} className="upload-icon" />
+        </button>
       </div>
     </div>
   );
