@@ -1,0 +1,114 @@
+.home-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: #f8f9fa;
+}
+
+.content-wrapper {
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+  animation: fadeIn 0.8s ease-in;
+}
+
+.hero-image {
+  width: 90%;
+  transition: transform 0.3s ease;
+}
+
+.hero-image:hover {
+  transform: translateY(-5px);
+}
+
+.intro-text {
+  margin-bottom: 2.5rem;
+  padding: 0 1rem;
+}
+
+
+.intro-text p {
+  font-size: 1.1rem;
+  color: #4a5568;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.get-started-btn {
+  background-color: #29CC57;
+  color: white;
+  border: none;
+  padding: 1.5rem 3.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  position: relative;
+  border-bottom: 4px solid #0a8f1c;
+  transform: translateY(-2px);
+  overflow: hidden;  /* Important for containing the shine */
+}
+
+.get-started-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg);
+  animation: shine 1s infinite;
+}
+
+.get-started-btn:hover {
+  background-color: #14cf2d;
+  transform: translateY(0);
+  border-bottom-width: 4px;
+}
+
+@keyframes shine {
+  0% {
+    left: -75%;
+  }
+  20% {
+    left: 125%;
+  }
+  100% {
+    left: 125%;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .intro-text h1 {
+    font-size: 2rem;
+  }
+  
+  .intro-text p {
+    font-size: 1rem;
+  }
+  
+  .get-started-btn {
+    padding: 0.8rem 2rem;
+  }
+}
