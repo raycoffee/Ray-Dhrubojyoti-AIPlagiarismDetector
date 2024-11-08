@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import "./Navbar.css";
 
 const Navbar = () => {
+  const navigate = useNavigate()
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -10,7 +12,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="nav-brand">
+      <div className="nav-brand" onClick={() => navigate(('/'))}>
         <img src="/images/logo.png" alt="Logo" className="nav-logo" />
       </div>
 

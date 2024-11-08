@@ -1,0 +1,129 @@
+
+.user-doc-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 20px;
+}
+
+.user-doc-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.user-doc-header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.user-doc-file-info {
+  display: flex;
+  color: #666;
+  font-size: 1.5rem;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.user-doc-content {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.user-doc-loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.user-doc-progress-bar {
+  width: 100%;
+  height: 4px;
+  background-color: #edf2f7;
+  border-radius: 2px;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+}
+
+.user-doc-progress {
+  height: 100%;
+  background-color: #4299e1;
+  transition: width 0.3s ease;
+}
+
+.user-doc-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #edf2f7;
+  border-radius: 50%;
+  border-top-color: #4299e1;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.user-doc-error-container {
+  text-align: center;
+  padding: 2rem;
+  color: #e53e3e;
+}
+
+.user-doc-error-container h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+
+.user-doc-retry-button,
+.user-doc-new-check-button {
+  background-color: #29CC57;
+  color: white;
+  border: none;
+  padding: 0rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  position: relative;
+  border-bottom: 4px solid #0a8f1c;
+  box-sizing: border-box;
+  height: 60px;
+}
+
+.user-doc-retry-button:hover,
+.user-doc-new-check-button:hover {
+  background-color: #1fa545;
+}
+
+
+.user-doc-result-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+
+@media (max-width: 768px) {
+  .user-doc-container {
+    margin: 1rem;
+    padding: 0 1rem;
+  }
+
+  .user-doc-content {
+    padding: 1rem;
+  }
+
+  .user-doc-header h1 {
+    font-size: 1.5rem;
+  }
+}
