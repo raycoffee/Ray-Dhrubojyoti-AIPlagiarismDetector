@@ -24,6 +24,10 @@
   margin-top: 50px;
 }
 
+.user-doc-file-info p {
+  margin: 0;
+}
+
 .user-doc-content {
   background: white;
   border-radius: 8px;
