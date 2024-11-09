@@ -4,7 +4,7 @@ A sophisticated AI plagiarism detection tool that analyzes text content to ident
 
 ## Live Demo 🌐
 
-[View the live application](https://ray-dhrubojyoti-ai-plagiarism-detector-client.vercel.app/)
+[View the live application](https://rayanswersai.xyz/)
 
 ## Features ✨
 
