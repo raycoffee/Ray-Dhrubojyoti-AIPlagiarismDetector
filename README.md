@@ -20,8 +20,8 @@ A sophisticated AI plagiarism detection tool that analyzes text content to ident
 - **Backend**: Node.js/Express
 - **API Integration**: OpenAI
 - **Deployment**: 
-  - Frontend: Vercel
-  - Backend: Railway
+  - Frontend: Render
+  - Backend: Render
 
 ## Getting Started 🚀
 
