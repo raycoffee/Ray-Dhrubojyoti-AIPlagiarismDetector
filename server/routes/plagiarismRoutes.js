@@ -1,5 +1,5 @@
 import express from "express"
-import { checkPlagiarism } from "../controllers/PlagiarismController.js"
+import { checkPlagiarism } from "../controllers/plagiarismController.js"
 
 const router = express.Router()
 
