@@ -23,7 +23,7 @@
 }
 
 .homepage-hero-image {
-  width: 600px;
+  width: 650px;
   transition: transform 0.3s ease;
 }
 
@@ -34,6 +34,10 @@
 .homepage-intro-text {
   margin-bottom: 2.5rem;
   padding: 0 1rem;
+}
+
+.homepage-intro-text h1 {
+  font-size: 2em;
 }
 
 .homepage-intro-text p {
@@ -61,7 +65,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 35px;
+  /* margin-top: 35px; */
 }
 
 .homepage-get-started-btn::before {
@@ -389,7 +393,7 @@
 
 @media (max-width: 768px) {
   .homepage-intro-text h1 {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 
   .homepage-intro-text p {
