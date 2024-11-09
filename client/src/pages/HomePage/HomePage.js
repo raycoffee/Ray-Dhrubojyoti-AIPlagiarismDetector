@@ -146,7 +146,7 @@ const HomePage = () => {
             </div>
           </div>
           <div className="homepage-features-section" >
-            <img src="/images/openai-doc.png" style={{ width: "35%" }} />
+            <img src="/images/openai-doc.png" style={{ width: "35vw" }} />
             <div className="homepage-features-section-desc">
               <h3>Powered by OpenAI</h3>
               <p>Documents, PDFs, Text files are analyzed by OpenAI GPT-4o.</p>
